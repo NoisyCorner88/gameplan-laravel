@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>📋 GamePlan </title>
+    <title>  GamePlan </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,7 @@
         .neo-btn {
             border: 3px solid #222;
             border-radius: 12px;
-            box-shadow: 4px 4px 0px #222;
+            box-shadow: 4px 4px 0px #e25f5f;
             transition: transform 0.1s ease, box-shadow 0.1s ease;
             font-weight: 800;
             text-transform: uppercase;
@@ -159,7 +159,7 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-5 sm:py-6 flex items-center justify-between">
             <div>
                 <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#222] tracking-tight leading-tight">
-                    📋 GamePlan
+                    GamePlan
                 </h1>
                 <p class="text-[#222] font-semibold text-sm sm:text-base mt-0.5 opacity-80">
                     Plan your tasks. Crush your goals.
@@ -255,12 +255,12 @@
         <section class="neo-card bg-white p-5 sm:p-6">
             <form method="GET" action="{{ route('tasks.index') }}" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 items-end">
                 <div>
-                    <label class="block font-bold text-[#222] mb-1.5 text-sm">🔍 Cari</label>
+                    <label class="block font-bold text-[#222] mb-1.5 text-sm"> Cari</label>
                     <input type="text" name="search" placeholder="Cari judul tugas..."
                            value="{{ request('search') }}" class="neo-input w-full" />
                 </div>
                 <div>
-                    <label class="block font-bold text-[#222] mb-1.5 text-sm">📋 Filter</label>
+                    <label class="block font-bold text-[#222] mb-1.5 text-sm">Filter</label>
                     <select name="filter" class="neo-input w-full">
                         <option value="all"       {{ request('filter') == 'all'       ? 'selected' : '' }}>Semua</option>
                         <option value="active"    {{ request('filter') == 'active'    ? 'selected' : '' }}>Aktif</option>
@@ -268,7 +268,7 @@
                     </select>
                 </div>
                 <div>
-                    <label class="block font-bold text-[#222] mb-1.5 text-sm">↕️ Urutkan</label>
+                    <label class="block font-bold text-[#222] mb-1.5 text-sm">↕Urutkan</label>
                     <select name="sort" class="neo-input w-full">
                         <option value="deadline" {{ request('sort','deadline') == 'deadline' ? 'selected' : '' }}>Deadline</option>
                         <option value="priority" {{ request('sort') == 'priority' ? 'selected' : '' }}>Prioritas</option>
@@ -421,7 +421,7 @@
     <footer class="bg-[#222] border-t-4 border-[#FF6B6B] py-4 mt-auto">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
             <p class="text-white font-bold text-sm">
-                GamePlan &copy; {{ date('Y') }} — Dibangun dengan 💪 Neobrutalism
+                GamePlan ; {{ date('Y') }} —  
             </p>
         </div>
     </footer>
